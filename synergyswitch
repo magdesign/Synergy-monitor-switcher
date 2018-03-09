@@ -1,0 +1,13 @@
+#!/bin/sh
+
+synergys -f --debug INFO  --config /path/to//synergy.conf --enable-crypto | while read line; do
+  if echo $line | grep entering; then
+    echo mouse is back
+    sudo ddccontrol -r 0x60 -w 14 dev:/dev/i2c-0
+  fi
+  if echo $line | grep leaving; then
+    echo mouse just left
+    sudo ddccontrol -r 0x60 -w 25 dev:/dev/i2c-0
+  fi
+
+done
