@@ -1,13 +1,13 @@
 # Synergy-monitor-switcher
-Switch display input source with Symless Synergy tool
-
+Switch display input source with Symless Synergy tool.
+Change the path to your own synergy.conf file and start the synergy with this tool.
 
 
 Tested on Ubuntu Linux.
 Does not seem to work with Nvidia in combination with DP ports, but test for yourself.
 Mine jsut works from switching DVI to DP, switch back has to be done manually.
 
-Change the path to your own synergy.conf file.
+
 
 
 For my dell monitor, I figured out:
